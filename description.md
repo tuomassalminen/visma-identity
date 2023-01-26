@@ -1,6 +1,6 @@
 README.md has guide on how to run the application
 
-In this assignment I was tasked to create a class for identifying different kinds of requests made to a mobile app. The request can be identified based on a uri string passed on to the class. For example, in the uri visma-identity://login?source=severa, the path is login and the parameters are source=severa. In the parameters we have "source" as a key and "severa" as a value.
+In this assignment I was tasked to create a class for identifying different kinds of requests made to a mobile app. The request can be identified based on a uri string passed on to the class. For example, in the uri `"visma-identity://login?source=severa"`, the path is login and the parameters are source=severa. In the parameters we have "source" as a key and "severa" as a value.
 
 I decided to use TypeScript to complete this assignment, as it is a familiar language to me. I created all the required logic in the file RequestIdentifier.ts. The RequestIdentifier class is defined there. The file index.ts has a main function that creates an instance of RequestIdentifier and calls its methods, and prints the parsed path and parameters to the terminal. For example you can run `npm run client "visma-identity://login?source=severa"` in the terminal to print out `{ parameters: { source: 'severa' }, path: 'login' }`
 
