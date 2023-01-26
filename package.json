@@ -2,7 +2,7 @@
   "scripts": {
     "test": "jest",
     "ts-node": "ts-node",
-    "client": "ts-node index.ts"
+    "client": "ts-node src/index.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
