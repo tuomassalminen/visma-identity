@@ -15,7 +15,7 @@ describe('RequestIdentifier class', () => {
     const requestIdentifier2 = new RequestIdentifier('invalid-host://login?source=severa')
     expect(() => {
       requestIdentifier2.validateUri()
-    }).toThrow('Invalid URI scheme')
+    }).toThrow('Invalid uri scheme, should be visma-identity')
     const requestIdentifier3 = new RequestIdentifier('visma-identity://wrongPath?source=severa')
     expect(() => {
       requestIdentifier3.validateUri()
