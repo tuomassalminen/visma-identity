@@ -1,6 +1,6 @@
 import { PathAndParameters } from "./types"
 
-class Identity {
+class RequestIdentifier {
   uri: string
 
   constructor(uri: string) {
@@ -58,4 +58,4 @@ class Identity {
   }
 }
 
-export default Identity
+export default RequestIdentifier
